@@ -82,7 +82,7 @@ This analysis was guided by key questions:
 📌 **Insight:**  
 Data bundle spending increased in the second half of the year due to a pricing change from **GHS 350 (90GB)** to **GHS 399 (214GB)**.
 
-![Data Bundle](images/Data%20bundle.png)
+![Data Bundle](images/Data_bundle.png)
 
 ---
 
@@ -171,18 +171,138 @@ This indicates **intentional financial management and disciplined money allocati
 
 ---
 
-## 🧮 DAX Measures (Click to Expand)
 
----
 
-### 💰 Income
+## 🧮 DAX Measures
 
 <details>
-<summary>View DAX</summary>
+<summary>Click to view all DAX measures</summary>
 
 ```DAX
+-- ========================
+-- INCOME
+-- ========================
 Total Income =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
     'MoMo_Transactions'[TRANS. TYPE] <> "DEBIT"
+)
+
+-- ========================
+-- EXPENSES
+-- ========================
+Total Expenses =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Total Other Expenses =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT",
+    NOT 'MoMo_Transactions'[OVA] IN {
+        "yelloAD.sp",
+        "ICS3.sp",
+        "HubtelPos",
+        "zpcot.sp"
+    }
+)
+
+-- ========================
+-- TRANSACTIONS
+-- ========================
+Total Transactions =
+COUNT('MoMo_Transactions'[F_ID])
+
+Total Debit Transactions =
+CALCULATE(
+    COUNT('MoMo_Transactions'[F_ID]),
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Total Credit Transaction Amount =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[TRANS. TYPE] <> "DEBIT"
+)
+
+-- ========================
+-- DATA BUNDLE
+-- ========================
+Total Data Bundle Spending =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[AMOUNT] IN {350, 399},
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Total Data Bundle Transactions =
+CALCULATE(
+    COUNTROWS('MoMo_Transactions'),
+    'MoMo_Transactions'[AMOUNT] IN {350, 399},
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Average Bundle Cost =
+DIVIDE(
+    [Total Data Bundle Spending],
+    [Total Data Bundle Transactions]
+)
+
+-- ========================
+-- SAVINGS (YELLO SAVE)
+-- ========================
+Total Yello Save Savings =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[AMOUNT] IN {32, 52},
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Total Yello Save Transactions =
+CALCULATE(
+    COUNTROWS('MoMo_Transactions'),
+    'MoMo_Transactions'[AMOUNT] IN {32, 52},
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+Average Daily Savings =
+DIVIDE(
+    [Total Yello Save Savings],
+    [Total Yello Save Transactions]
+)
+
+Savings Consistency % =
+DIVIDE(
+    [Total Yello Save Transactions],
+    365
+)
+
+-- ========================
+-- INVESTMENTS
+-- ========================
+Total Investment =
+CALCULATE(
+    SUM('MoMo_Transactions'[AMOUNT]),
+    'MoMo_Transactions'[OVA] IN {"ICS3.sp","HubtelPos","zpcot.sp"},
+    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
+)
+
+%Investment =
+DIVIDE(
+    [Total Investment],
+    [Total Expenses]
+)
+
+-- ========================
+-- FINANCIAL HEALTH
+-- ========================
+Net Financial Position =
+[Total Income] - [Total Expenses]
+
+Savings Rate =
+DIVIDE(
+    [Total Yello Save Savings],
+    [Total Income]
 )
