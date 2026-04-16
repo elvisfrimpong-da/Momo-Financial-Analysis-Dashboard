@@ -194,6 +194,15 @@ Set spending benchmarks and monitor deviations monthly.
 - Power Query  
 - Excel  
 
+## 🔗 Explore the Project
+
+You can explore both the technical implementation and the full story behind this analysis:
+
+👉 **GitHub Repository (Dashboard + DAX):**  
+🔗 https://github.com/elvisfrimpong-da/Momo-Financial-Analysis-Dashboard 
+
+👉 **Medium Article (Full Story & Insights):**  
+🔗 https://medium.com/@elvisfrimpong.da/i-tracked-every-mobile-money-transaction-i-made-in-2025-heres-what-i-learned-f0bd7a77ab5b  
 ---
 
 ## 🧮 DAX Measures
@@ -271,3 +280,5 @@ CALCULATE(
 -- FINANCIAL HEALTH
 Net Financial Position =
 [Total Income] - [Total Expenses]
+
+
