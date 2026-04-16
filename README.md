@@ -1,4 +1,3 @@
-
 # 📊 MoMo Financial Analysis Dashboard
 
 **Turning personal mobile money transactions into actionable financial insights**
@@ -7,23 +6,28 @@
 
 ## 📌 Overview
 
-This project presents a comprehensive **Power BI dashboard** analyzing personal Mobile Money (MoMo) transactions for the year **2025**.
+This project presents an end-to-end **Power BI analysis of personal Mobile Money (MoMo) transactions for 2025**, designed to uncover patterns in spending, saving, and investment behavior.
 
-The dashboard transforms raw transactional data into meaningful insights across:
+The dashboard goes beyond basic visualization by combining:
+- Financial behavior analysis  
+- Context-driven interpretation  
+- Actionable recommendations  
 
-- Transaction activity and trends  
-- Spending patterns and expense behavior  
-- Savings discipline (Yello Save)  
-- Investment growth and contributions  
-- Overall financial health  
+👉 The goal is to understand **how money flows, how it is allocated, and how financial discipline evolves over time**.
 
-The objective is to understand **how money flows, how it is allocated, and how financial discipline evolves over time**.
+---
+
+## 🎯 Project Objectives
+
+- Analyze transaction activity and trends  
+- Identify spending patterns and key expense drivers  
+- Evaluate savings consistency and growth  
+- Track investment contributions and behavior  
+- Assess overall financial health  
 
 ---
 
 ## 🧠 Business Questions
-
-This analysis was guided by key questions:
 
 ### 💳 Transactions
 - What is the total transaction volume and value?
@@ -59,212 +63,138 @@ This analysis was guided by key questions:
 
 ## 📊 Dashboard Pages
 
----
-
 ### 1️⃣ Transaction Overview
-
-- Total transactions and value  
-- AM vs PM activity  
-- Weekly transaction patterns  
-- Monthly trends  
-
 ![Transaction Page](images/Transaction%20Page.png)
 
+- Transaction volume and value  
+- AM vs PM activity patterns  
+- Weekly and monthly trends  
+
 ---
 
-### 2️⃣ Data Bundle Spending & Usage Analysis
+### 2️⃣ Data Bundle Spending & Usage
+![Data Bundle](images/Data%20bundle.png)
 
-- Total data bundle spending  
-- Purchase frequency  
+- Total spending and purchase frequency  
 - Quarterly distribution  
-- Average bundle cost  
+- Pricing impact analysis  
 
 📌 **Insight:**  
-Data bundle spending increased in the second half of the year due to a pricing change from **GHS 350 (90GB)** to **GHS 399 (214GB)**.
-
-![Data Bundle](images/Data_bundle.png)
+Spending increased after a pricing shift from **GHS 350 → GHS 399**, reflecting higher value bundles.
 
 ---
 
-### 3️⃣ Yello Save Savings & Consistency Analysis
-
-- Total savings: **GHS 15,388+**  
-- Savings consistency: **98% (359 days)**  
-- Average daily savings  
-
-📌 **Key Insight:**  
-Savings increased significantly after **June 2025**, when daily savings changed from **GHS 32 → GHS 52**.
-
-📌 **Behavior Insight:**  
-Automated savings ensured strong financial discipline and consistency.
-
+### 3️⃣ Yello Save Savings & Consistency
 ![Yello Save](images/Yello%20save.png)
 
----
-
-### 4️⃣ Investment Growth & Contribution Analysis
-
-- Total investment value  
-- Investment share (%)  
-- Monthly growth trend  
-- Quarterly distribution  
+- Total savings: **GHS 15,388+**  
+- Consistency rate: **98% (359 days)**  
 
 📌 **Insight:**  
-Investment contributions increased in later months, indicating a shift toward long-term financial planning.
-
-![Investment](images/Investment.png)
+Savings increased after mid-year adjustment from **GHS 32 → GHS 52**, supported by automation.
 
 ---
 
-### 5️⃣ Expense Analysis & Spending Patterns
+### 4️⃣ Investment Analysis
+![Investment](images/Investment.png)
 
-- Spending by category  
-- Top payees  
-- Monthly expense trends  
+- Total investment value  
+- Contribution trends  
+- Monthly growth  
+
+📌 **Insight:**  
+Investment activity increased in later months, indicating a shift toward long-term financial planning.
+
+---
+
+### 5️⃣ Expense Analysis
+![Expenses](images/Expenses.png)
+
+- Spending categories  
+- Top recipients  
+- Monthly trends  
 
 📌 **Context:**  
-Higher expenses on medication and healthcare were observed due to health challenges during the year.
-
-👉 This explains increased spending in medical-related categories.
-
-![Expenses](images/Expenses.png)
+Higher healthcare spending reflects real-life medical conditions, not discretionary overspending.
 
 ---
 
 ### 6️⃣ Financial Health Summary
-
-- Net Financial Position  
-- Total Income vs Expenses  
-- Savings Rate  
-- Monthly financial allocation  
-
-📌 **Key Insight:**  
-The negative net position reflects **active cash movement**, not overspending.
-
-👉 Funds are frequently:
-- Transferred to bank accounts  
-- Invested  
-
-📌 **Conclusion:**  
-This indicates **intentional financial management and disciplined money allocation**.
-
 ![Financial Health Summary](images/Financial%20Health%20Summary.png)
+
+- Net financial position  
+- Income vs expenses  
+- Savings rate  
+- Allocation trends  
+
+📌 **Insight:**  
+Low/negative balances reflect **active fund transfers and investments**, not poor financial management.
 
 ---
 
 ## 📈 Key Insights
 
-- Strong savings discipline with **98% consistency (359 days)**
-- Increase in savings after mid-year adjustment (GHS 32 → GHS 52)
+- Strong savings discipline with **98% consistency**
+- Increased savings after mid-year adjustment
 - Growing investment contributions toward year-end
-- High medical expenses driven by real-life health conditions
-- Financial behavior reflects **strategic cash management**, not overspending
+- High medical expenses driven by real-life conditions
+- Financial behavior reflects **intentional cash management**
 
-## 📈 Key Insights & Interpretation
+---
 
-This analysis reveals a structured approach to personal financial management rather than irregular or uncontrolled spending.
+## 🧠 Insights & Interpretation
 
-- **High savings consistency (98%)** demonstrates disciplined financial behavior supported by automated saving.
-- A **mid-year increase in savings contribution (GHS 32 → GHS 52)** reflects improved financial capacity and commitment.
-- **Investment activity increases in later months**, indicating a shift from short-term spending to long-term wealth building.
-- Elevated spending on healthcare is **context-driven**, linked to real-life medical needs rather than discretionary overspending.
-- A **negative or low MoMo balance is not indicative of poor financial health**, but rather a result of frequent fund transfers to bank accounts and investment platforms.
+This analysis reflects a structured financial approach:
 
-👉 Overall, the data reflects **intentional financial planning, disciplined saving, and strategic allocation of funds**.
+- Funds are actively moved across platforms (MoMo → Bank → Investments)
+- Savings behavior is automated and consistent
+- Spending patterns are largely necessity-driven
+- Investment activity increases with financial stability
+
+👉 Overall, the data shows **discipline, adaptability, and long-term financial focus**.
 
 ---
 
 ## 💡 Key Recommendations
 
-Based on the analysis, the following recommendations can further improve financial efficiency and decision-making:
-
-### 1. Track Cross-Platform Cash Flow
-Since funds are frequently transferred out of MoMo to bank accounts and investments, integrating **multi-account tracking** would provide a more complete financial picture.
+### 1. Track Cross-Platform Finances
+Integrate MoMo, bank, and investment data for a complete financial view.
 
 ---
 
-### 2. Maintain and Optimize Automated Savings
-The introduction of automated savings significantly improved consistency.
-
-👉 Recommendation:
-- Continue automation  
-- Periodically review and increase savings based on income growth  
+### 2. Maintain Automated Savings
+Automation proved highly effective—continue and scale contributions over time.
 
 ---
 
 ### 3. Strengthen Investment Strategy
-Investment contributions increased over time, which is a positive signal.
-
-👉 Recommendation:
-- Introduce **diversification tracking**
-- Monitor returns to evaluate investment performance  
+Track performance and diversify investment allocations.
 
 ---
 
-### 4. Monitor Health-Related Expenses
-Medical expenses contributed significantly to overall spending.
-
-👉 Recommendation:
-- Consider **budget allocation for healthcare**
-- Explore insurance or preventive healthcare options  
+### 4. Plan for Healthcare Costs
+Introduce a structured healthcare budget or financial buffer.
 
 ---
 
 ### 5. Improve Financial Visibility
-The current MoMo balance alone does not reflect true financial position.
-
-👉 Recommendation:
-- Build a **unified financial dashboard** combining:
-  - MoMo  
-  - Bank accounts  
-  - Investments  
+Build a unified dashboard combining all financial accounts.
 
 ---
 
-### 6. Introduce Budget Benchmarks
-Adding spending benchmarks can help control variability in expenses.
-
-👉 Recommendation:
-- Set monthly limits for key categories  
-- Track deviations against planned budgets  
-
----
-
-## 🚀 Project Value
-
-This project demonstrates:
-
-- Ability to **transform raw transactional data into insights**
-- Strong understanding of **financial behavior analysis**
-- Practical use of **Power BI, DAX, and data modeling**
-- Real-world application of **data storytelling and decision support**
-
-👉 The dashboard goes beyond visualization by providing **context, interpretation, and actionable recommendations**.
-
----
-
-## 🎯 Conclusion
-
-This analysis highlights a financially disciplined approach characterized by:
-
-- Consistent saving habits  
-- Increasing investment contributions  
-- Strategic cash movement across platforms  
-
-Despite fluctuations in wallet balance, the overall financial behavior reflects **intentional planning, resilience, and long-term wealth focus**.
+### 6. Introduce Budget Controls
+Set spending benchmarks and monitor deviations monthly.
 
 ---
 
 ## 🧰 Tools & Technologies
 
-- **Power BI** – Dashboard design  
-- **DAX** – Calculations and KPIs  
-- **Power Query** – Data transformation  
-- **Excel** – Data preparation  
+- Power BI  
+- DAX  
+- Power Query  
+- Excel  
 
 ---
-
-
 
 ## 🧮 DAX Measures
 
@@ -272,18 +202,14 @@ Despite fluctuations in wallet balance, the overall financial behavior reflects 
 <summary>Click to view all DAX measures</summary>
 
 ```DAX
--- ========================
 -- INCOME
--- ========================
 Total Income =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
     'MoMo_Transactions'[TRANS. TYPE] <> "DEBIT"
 )
 
--- ========================
 -- EXPENSES
--- ========================
 Total Expenses =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
@@ -302,9 +228,7 @@ CALCULATE(
     }
 )
 
--- ========================
 -- TRANSACTIONS
--- ========================
 Total Transactions =
 COUNT('MoMo_Transactions'[F_ID])
 
@@ -320,9 +244,7 @@ CALCULATE(
     'MoMo_Transactions'[TRANS. TYPE] <> "DEBIT"
 )
 
--- ========================
 -- DATA BUNDLE
--- ========================
 Total Data Bundle Spending =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
@@ -330,22 +252,7 @@ CALCULATE(
     'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
 )
 
-Total Data Bundle Transactions =
-CALCULATE(
-    COUNTROWS('MoMo_Transactions'),
-    'MoMo_Transactions'[AMOUNT] IN {350, 399},
-    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
-)
-
-Average Bundle Cost =
-DIVIDE(
-    [Total Data Bundle Spending],
-    [Total Data Bundle Transactions]
-)
-
--- ========================
--- SAVINGS (YELLO SAVE)
--- ========================
+-- SAVINGS
 Total Yello Save Savings =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
@@ -353,28 +260,7 @@ CALCULATE(
     'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
 )
 
-Total Yello Save Transactions =
-CALCULATE(
-    COUNTROWS('MoMo_Transactions'),
-    'MoMo_Transactions'[AMOUNT] IN {32, 52},
-    'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
-)
-
-Average Daily Savings =
-DIVIDE(
-    [Total Yello Save Savings],
-    [Total Yello Save Transactions]
-)
-
-Savings Consistency % =
-DIVIDE(
-    [Total Yello Save Transactions],
-    365
-)
-
--- ========================
--- INVESTMENTS
--- ========================
+-- INVESTMENT
 Total Investment =
 CALCULATE(
     SUM('MoMo_Transactions'[AMOUNT]),
@@ -382,21 +268,6 @@ CALCULATE(
     'MoMo_Transactions'[TRANS. TYPE] = "DEBIT"
 )
 
-%Investment =
-DIVIDE(
-    [Total Investment],
-    [Total Expenses]
-)
-
--- ========================
 -- FINANCIAL HEALTH
--- ========================
 Net Financial Position =
 [Total Income] - [Total Expenses]
-
-Savings Rate =
-DIVIDE(
-    [Total Yello Save Savings],
-    [Total Income]
-)
-
